@@ -10,7 +10,8 @@ define(["build/contactModel"], function(Contact) {
 	function tempInitializeStorage() {
 		var contacts = [
 			new Contact({id: "1", firstName: "Alex", lastName: "Black", phone: "+380501234567" }),
-			new Contact({id: "2", firstName: "Kate", lastName: "White", phone: "+380507654321" })
+			new Contact({id: "2", firstName: "Kate", lastName: "White", phone: "+380507654321" }),
+            new Contact({id: "3", firstName: "Joel", lastName: "K", phone: "+1234567890" })
 		];
 		localStorage.setItem("f7Base", JSON.stringify(contacts));
 		return JSON.parse(localStorage.getItem("f7Base"));
